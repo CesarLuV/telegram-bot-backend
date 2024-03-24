@@ -31,7 +31,7 @@ def measure_time(func):
 @measure_time
 def file_opener(file_name: str, folder_path: str = None) -> List[Tuple[str, str]]:
     env_vars = dict(environ)
-    folder_path = folder_path if folder_path else env_vars.get('FOLDER_NAME')
+    folder_path = folder_path if folder_path else env_vars.get('PHRASES_FOLDER')
     phrases = []
     
     if not folder_path:
