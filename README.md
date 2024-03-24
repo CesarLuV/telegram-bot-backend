@@ -21,6 +21,19 @@ pip-compile
 pip3 install -r requirements.txt
 ```
 
+# Read files with phrases
+Create an environment variable with the full path of the file that contains the phrases:
+```BASH
+export FOLDER_NAME=/Folder_Path
+```
+
+Make sure the variable exists with command:
+```BASH
+echo $FOLDER_NAME
+
+>> /Folder_Path
+```
+
 # Running the project
 In a terminal, with the virtual environment activated, execute:
 ```BASH
