@@ -23,6 +23,8 @@ def read_item(item_id: int, q: Union[str, None] = None):
 def get_phrase():
     # TODO: Change for Database info
     phrases = file_opener("Filosofía.md")
+    phrases += file_opener("De todo un poco.md")
+    phrases += file_opener("Influencia.md")
     phrase_id = randint(0, len(phrases) - 1)
     return {
         "id": phrase_id,
