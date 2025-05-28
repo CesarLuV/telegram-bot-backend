@@ -24,7 +24,7 @@ pip3 install -r requirements.txt
 # Running the project
 In a terminal, with the virtual environment activated, execute:
 ```BASH
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 # Interactive API docs (provided by Swagger UI)
